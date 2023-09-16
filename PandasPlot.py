@@ -28,7 +28,7 @@ valy = st.multiselect("Selecciona los valores en y", columns, default="Ratings")
 #valoresx = df[valx[0]].value_counts()
 #valoresy = df[valy[0]].value_counts()
 
-trace2 = go.Line(df,
+trace2 = go.Line(
     x=valx,
     y=valy)
 
