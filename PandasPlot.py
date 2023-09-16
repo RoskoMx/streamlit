@@ -30,7 +30,7 @@ valoresy = df[valy[0]].value_counts()
 
 trace2 = go.Line(
     x=valoresx.values,
-    y=valy.values)
+    y=valoresy.values)
 
 layout2 = go.Layout(title = "FIFA 21")
 data2 = [trace2]
