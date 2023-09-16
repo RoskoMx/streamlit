@@ -22,8 +22,8 @@ st.plotly_chart(fig)
 
 
 st.title('Gráfica de líneas')
-valx = st.multiselect("Selecciona los valores en x", columns, default="Country")
-valy = st.multiselect("Selecciona los valores en y", columns, default="Ratings")
+valx = st.multiselect("Selecciona País, Liga o Club", columns, default="Country")
+valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 
 valoresx = df[valx[0]].value_counts()
 valoresy = df[valy[0]].value_counts()
