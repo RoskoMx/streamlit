@@ -26,12 +26,10 @@ valx = st.multiselect("Selecciona los valores en x", columns, default="Country")
 valy = st.multiselect("Selecciona los valores en y", columns, default="Ratings")
 
 
-fig = px.scatter(
-    df,
+fig2 = px.scatter(
     x=valx,
-    y=valy,
-    size="pop",
-    color="continent"
-)
+    y=valy)
+
+st.plotly_chart(fig2)
 
 
