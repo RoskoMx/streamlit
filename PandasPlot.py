@@ -25,10 +25,13 @@ st.title('Gráfica de dispersión')
 valx = st.multiselect("Selecciona los valores en x", columns, default="Country")
 valy = st.multiselect("Selecciona los valores en y", columns, default="Ratings")
 
+valoresx = df[valx[0]].str.strip().value_counts()
+valoresy = df[valy[0]].str.strip().value_counts()
+
 
 fig2 = px.scatter(
-    x=valx,
-    y=valy)
+    x=valoresx.index,
+    y=valoresy.values)
 
 st.plotly_chart(fig2)
 
