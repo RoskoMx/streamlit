@@ -21,17 +21,17 @@ fig = go.Figure(data=data,layout=layout)
 st.plotly_chart(fig)
 
 
-st.title('Gráfica de dispersión')
+st.title('Gráfica de líneas')
 valx = st.multiselect("Selecciona los valores en x", columns, default="Country")
 valy = st.multiselect("Selecciona los valores en y", columns, default="Ratings")
 
-valoresx = df[valx[0]].value_counts()
-valoresy = df[valy[0]].value_counts()
+#valoresx = df[valx[0]].value_counts()
+#valoresy = df[valy[0]].value_counts()
 
 
-fig2 = px.scatter(
-    x=valoresx.values,
-    y=valoresy.values)
+fig2 = px.line(df,
+    x=valx,
+    y=valy)
 
 st.plotly_chart(fig2)
 
