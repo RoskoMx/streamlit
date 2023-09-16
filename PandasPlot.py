@@ -28,11 +28,13 @@ valy = st.multiselect("Selecciona los valores en y", columns, default="Ratings")
 #valoresx = df[valx[0]].value_counts()
 #valoresy = df[valy[0]].value_counts()
 
-
-fig2 = px.line(df,
+trace2 = go.Line(df,
     x=valx,
     y=valy)
 
+layout2 = go.Layout(title = "FIFA 21")
+data2 = [trace2]
+fig2 = go.Figure(data=data2,layout=layout2)
 st.plotly_chart(fig2)
 
 
