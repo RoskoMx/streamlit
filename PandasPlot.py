@@ -30,7 +30,7 @@ valoresy = df[valy[0]].str.strip().value_counts()
 
 
 fig2 = px.scatter(
-    x=valoresx.index,
+    x=valoresx.values,
     y=valoresy.values)
 
 st.plotly_chart(fig2)
