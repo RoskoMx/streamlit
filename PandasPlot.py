@@ -32,6 +32,11 @@ st.text(len(valoresx))
 st.text(len(valoresy))
 
 
+st.text(valoresx)
+st.text(valoresy)
+
+
+
 trace2 = px.line(df,x=valoresx.index,y=valoresy.values)
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
