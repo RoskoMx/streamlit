@@ -32,9 +32,11 @@ trace2 = go.Line(
     x=valoresx.index,
     y=valoresy.values)
 
-layout2 = go.Layout(title = "FIFA 21")
-data2 = [trace2]
-fig2 = go.Figure(data=data2,layout=layout2)
-st.plotly_chart(fig2)
+st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
+
+#layout2 = go.Layout(title = "FIFA 21")
+#data2 = [trace2]
+#fig2 = go.Figure(data=data2,layout=layout2)
+#st.plotly_chart(fig2)
 
 
