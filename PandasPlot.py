@@ -32,8 +32,8 @@ st.text(len(valoresx))
 st.text(len(valoresy))
 
 
-st.text(valoresx)
-st.text(valoresy)
+st.text(valoresx.index)
+st.text(valoresy.values)
 
 
 
