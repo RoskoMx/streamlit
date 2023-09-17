@@ -28,9 +28,7 @@ valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 valoresx = df[valx[0]].value_counts()
 valoresy = df[valy[0]].value_counts()
 
-trace2 = go.Line(
-    x=valoresx.index,
-    y=valoresy.values)
+trace2 = px.Line(x=valoresx.index, y=valoresy.values)
 
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
