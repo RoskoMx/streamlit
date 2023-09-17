@@ -28,7 +28,7 @@ valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 valoresx = df[valx[0]]
 valoresy = df[valy[0]]
 
-st.text(type(valoresx)
+st.text(type(valoresx))
 
 st.text(len(valoresx))
 st.text(len(valoresy))
