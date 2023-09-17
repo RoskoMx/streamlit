@@ -7,7 +7,7 @@ st.title('Gráfica de un dataframe: Seleccionando los datos')
 url = 'https://raw.githubusercontent.com/LilianaC/Pandas/master/Fifa%2023%20Fut%20Players.csv'
 df= pd.read_csv(url)
 
-st.title('Columna de barras')
+st.title('Gráfica de barras')
 
 columns = df.columns.tolist()
 
