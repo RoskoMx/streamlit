@@ -21,7 +21,7 @@ fig = go.Figure(data=data,layout=layout)
 st.plotly_chart(fig)
 
 
-st.title('Gráfica de líneas')
+st.title('Gráfica de Dispersión')
 valx = st.multiselect("Selecciona País, Liga o Club", columns, default="Country")
 valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 
@@ -49,4 +49,16 @@ st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 #fig2 = go.Figure(data=data2,layout=layout2)
 #st.plotly_chart(fig2)
 
+st.title('Gráfica de Dispersión')
+clist = df["Country"].unique().tolist()
 
+countries = st.multiselect("Select country", clist)
+st.header("Seleccionaste: {}".format(", ".join(countries)))
+
+dfs = {country: df[df["Country"] == country] for country in countries}
+
+fig = go.Figure()
+for country, df in dfs.items():
+  fig = fig.add_trace(go.Scatter(x=df["Popularity"], y=df["Ratings"], name=country))
+
+    st.plotly_chart(fig)
