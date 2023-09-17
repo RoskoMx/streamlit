@@ -25,8 +25,8 @@ st.title('Gráfica de líneas')
 valx = st.multiselect("Selecciona País, Liga o Club", columns, default="Country")
 valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 
-valoresx = df[valx[0]].value_counts()
-valoresy = df[valy[0]].value_counts()
+valoresx = df[valx[0]].str.strip().value_counts()
+valoresy = df[valy[0]].str.strip().value_counts()
 
 st.text(len(valoresx))
 st.text(len(valoresy))
