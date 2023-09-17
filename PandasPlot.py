@@ -25,6 +25,7 @@ st.title('Gráfica de líneas')
 valx = st.multiselect("Selecciona País, Liga o Club", columns, default="Country")
 valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 
+
 valoresx = df[valx[0]]
 valoresy = df[valy[0]]
 
@@ -39,7 +40,7 @@ st.text(valoresy.values)
 
 
 
-trace2 = px.line(df,x=valoresx.values,y=valoresy.values).update_yaxes(categoryorder="total descending")
+trace2 = px.scatter(df,x=valoresx.values,y=valoresy.values).update_yaxes(categoryorder="total descending")
 trace2.update_xaxes(type='category')
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
