@@ -61,4 +61,4 @@ fig = go.Figure()
 for country, df in dfs.items():
   fig = fig.add_trace(go.Scatter(x=df["Popularity"], y=df["Ratings"], name=country))
 
-    st.plotly_chart(fig)
+st.plotly_chart(fig)
