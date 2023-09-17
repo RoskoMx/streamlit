@@ -25,10 +25,10 @@ st.title('Gráfica de líneas')
 valx = st.multiselect("Selecciona País, Liga o Club", columns, default="Country")
 valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 
-#valoresx = df[valx[0]].value_counts()
-#valoresy = df[valy[0]].value_counts()
+valoresx = df[valx[0]].value_counts()
+valoresy = df[valy[0]].value_counts()
 
-trace2 = px.line(df,valx.values,valy.values)
+trace2 = px.line(df,valoresx.index,valoresy.values)
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
 #layout2 = go.Layout(title = "FIFA 21")
