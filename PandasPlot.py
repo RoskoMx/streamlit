@@ -39,7 +39,7 @@ st.text(valoresy.values)
 
 
 
-trace2 = px.line(df,x=valoresx.index,y=valoresy.values)
+trace2 = px.line(df,x=valoresx.values,y=valoresy.values)
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
 #layout2 = go.Layout(title = "FIFA 21")
