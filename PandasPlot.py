@@ -34,7 +34,7 @@ trace2 = px.scatter(df,x=valoresx.values,y=valoresy.values)
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
 #Multiselección gráfica de barras
-st.title('Gráfica de Dispersión')
+st.title('Gráfica de Dispersión: Ratings')
 clist = df["Country"].unique().tolist()
 
 countries = st.multiselect("Select country", clist)
