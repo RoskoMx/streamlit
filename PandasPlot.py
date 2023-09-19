@@ -37,7 +37,7 @@ st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 st.title('Gráfica de Dispersión: Ratings')
 clist = df["Country"].unique().tolist()
 
-countries = st.multiselect("Select country", clist)
+countries = st.multiselect("Selecciona el país", clist)
 st.header("Seleccionaste: {}".format(", ".join(countries)))
 
 dfs = {country: df[df["Country"] == country] for country in countries}
