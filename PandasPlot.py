@@ -30,7 +30,7 @@ valy = st.multiselect("Selecciona la métrica", columns, default="Ratings")
 valoresx = df[valx[0]]
 valoresy = df[valy[0]]
 
-trace2 = px.scatter(df,x=valoresx.values,y=valoresy.values)
+trace2 = px.line(df,x=valoresx.values,y=valoresy.values)
 st.plotly_chart(trace2, theme="streamlit", use_container_width=True)
 
 #Multiselección gráfica de barras
@@ -44,6 +44,6 @@ dfs = {country: df[df["Country"] == country] for country in countries}
 
 fig = go.Figure()
 for country, df in dfs.items():
-  fig = fig.add_trace(go.Line(x=df["Name"], y=df["Ratings"], name=country))
+  fig = fig.add_trace(go.Bar(x=df["Name"], y=df["Ratings"], name=country))
 
 st.plotly_chart(fig)
