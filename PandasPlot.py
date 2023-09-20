@@ -44,6 +44,6 @@ dfs = {country: df[df["Country"] == country] for country in countries}
 
 fig = go.Figure()
 for country, df in dfs.items():
-  fig = fig.add_trace(go.Bar(x=df["Name"], y=df["Ratings"], name=country))
+  fig = fig.add_trace(go.Line(x=df["Name"], y=df["Ratings"], name=country))
 
 st.plotly_chart(fig)
