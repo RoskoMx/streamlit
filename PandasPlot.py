@@ -16,7 +16,7 @@ columns = df.columns.tolist()
 selected_columns = st.multiselect("Selecciona la columna a graficar", columns, default="League")
 s = df[selected_columns[0]].str.strip().value_counts()
 
-trace = go.Bar(x=s.index,y=s.values)
+trace = go.Line(x=s.index,y=s.values)
 layout = go.Layout(title = "FIFA 21")
 data = [trace]
 fig = go.Figure(data=data,layout=layout)
