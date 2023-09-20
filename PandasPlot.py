@@ -22,7 +22,7 @@ columns = df.columns.tolist()
 selected_columns = st.multiselect("Selecciona la columna a graficar", columns, default="League")
 s = df[selected_columns[0]].str.strip()
 
-trace = go.Line(x=s.index,y=s.values)
+trace = go.Line(x=s,y=df['Raitings')
 
 layout = go.Layout(title = "FIFA 21")
 data = [trace]
