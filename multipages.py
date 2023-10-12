@@ -1,6 +1,8 @@
 # Contents of ~/my_app/streamlit_app.py
 import streamlit as st
 
+st.sidebar.image("logoCCTSF2-1.png",caption="Saludos desde México 🇲🇽")
+
 def Home():
     st.markdown("# Home 🎈")
     st.sidebar.markdown("# Home 🎈")
