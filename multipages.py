@@ -9,6 +9,7 @@ url = 'https://raw.githubusercontent.com/LilianaC/Pandas/master/Fifa%2023%20Fut%
 df= pd.read_csv(url)
 
 rankings = df['Ratings'].max()
+pais = df['Country'].mode()[0]
 
 
 def Home():
@@ -20,10 +21,14 @@ def page2():
     st.sidebar.markdown("# Página 2 ❄️")
     
     total1,total2=st.columns(2,gap='large')
+    
     with total1:
         st.info('Ranking más alto',icon="📌")
         st.metric(label="Ranking",value=f"{rankings:,.0f}")
 
+    with total2:
+        st.info('País con más jugadores',icon="📌")
+        st.metric(label="País",value=f"{pais:,.0f}")
 
 
 
