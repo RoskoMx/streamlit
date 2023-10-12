@@ -28,7 +28,7 @@ def page2():
 
     with total2:
         st.info('País con más jugadores',icon="📌")
-        st.metric(label="País",value=f"{pais:,.0f}")
+        st.metric(label="País",value=f"{pais}")
 
 
 
