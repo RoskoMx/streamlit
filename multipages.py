@@ -52,19 +52,19 @@ def page3():
     
     with total3:
         st.info('País',icon="📌")
-        st.metric(label="paisp",value=f"{rankings:,.0f}")
+        st.metric(label="País con más producción",value=f"{paisp}")
 
     with total4:
         st.info('Duración',icon="📌")
-        st.metric(label="durat",value=f"{pais}")
+        st.metric(label="Duración más repetida",value=f"{durat}")
 
     with total5:
         st.info('Año',icon="📌")
-        st.metric(label="year",value=f"{pais}")
+        st.metric(label="Año donde se produjo más",value=f"{year}")
 
     with total6:
         st.info('Tipo',icon="📌")
-        st.metric(label="tipo",value=f"{pais}")
+        st.metric(label="Tipo de producción",value=f"{type}")
 
 
 
