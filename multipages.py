@@ -17,8 +17,8 @@ def Home():
     st.sidebar.markdown("# Home 🎈")
 
 def page2():
-    st.markdown("# Página 2 ❄️")
-    st.sidebar.markdown("# Página 2 ❄️")
+    st.markdown("# Datos FIFA ⚽")
+    st.sidebar.markdown("# Datos FIFA ⚽")
     
     total1,total2=st.columns(2,gap='large')
     
