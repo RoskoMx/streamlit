@@ -42,8 +42,8 @@ df2 = pd.read_csv(url2)
 
 paisp = df2['country'].mode()[0]
 durat = df2['duration'].mode()[0]
-year = df['release_year'].mode()[0]
-tipo = df['type'].mode()[0]
+year = df2['release_year'].mode()[0]
+tipo = df2['type'].mode()[0]
 
 def page3():
     st.markdown("# Netflix 🎞️")
