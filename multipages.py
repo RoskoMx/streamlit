@@ -64,7 +64,7 @@ def page3():
 
     with total6:
         st.info('Tipo',icon="📌")
-        st.metric(label="Tipo de producción",value=f"{type}")
+        st.metric(label="Tipo de producción",value=f"{tipo}")
 
 
 
