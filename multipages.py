@@ -38,7 +38,7 @@ def page3():
 
 page_names_to_funcs = {
     "Home": Home,
-    "Página 2": page2,
+    "Datos FIFA ⚽": page2,
     "Página 3": page3,
 }
 
