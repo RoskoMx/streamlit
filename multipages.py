@@ -1,6 +1,7 @@
 # Contents of ~/my_app/streamlit_app.py
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 st.sidebar.image("logoCCTSF2-1.png",caption="Saludos desde México 🇲🇽")
 
@@ -15,6 +16,10 @@ pais = df['Country'].mode()[0]
 def Home():
     st.markdown("# Home 🎈")
     st.sidebar.markdown("# Home 🎈")
+    image = Image.open('internet-4463031_1280.jpg')
+    st.image(image, caption='Estadísticas')
+    
+
 
 def page2():
     st.markdown("# Datos FIFA ⚽")
