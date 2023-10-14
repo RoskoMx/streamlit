@@ -24,6 +24,10 @@ def Home():
 def page2():
     st.markdown("# Datos FIFA ⚽")
     st.sidebar.markdown("# Datos FIFA ⚽")
+
+    image = Image.open('soccer-488700_1280.jpg')
+    st.image(image, caption='Fútbol')
+    
     
     total1,total2=st.columns(2,gap='large')
     
