@@ -45,6 +45,10 @@ def page2():
 def page3():
     st.markdown("# Deltas 🚥")
     st.sidebar.markdown("# Deltas 🚥")
+
+    image = Image.open('cloud-4820504_1280.jpg')
+    st.image(image, caption='Clima')
+
     
     col1, col2, col3 = st.columns(3,gap='large')
     
