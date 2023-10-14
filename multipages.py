@@ -62,7 +62,7 @@ def page3():
 page_names_to_funcs = {
     "Home": Home,
     "Datos FIFA ⚽": page2,
-    "Netflix 🎞️": page3,
+    "Deltas 🚥": page3,
 }
 
 selected_page = st.sidebar.selectbox("Selecciona una página", page_names_to_funcs.keys())
