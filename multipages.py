@@ -48,7 +48,7 @@ tipo = df2['type'].mode()[0]
 def page3():
     st.markdown("# Netflix 🎞️")
     st.sidebar.markdown("# Netflix 🎞️")
-    total3,total4,total5,total6 = st.columns(4,gap='large')
+    total3,total4,total5,total6 = st.columns(4,gap='small')
     
     with total3:
         st.info('País',icon="📌")
