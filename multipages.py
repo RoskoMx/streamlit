@@ -46,7 +46,7 @@ def page3():
     
     with col1:
         st.info('Temperatura',icon="🌡️")
-        st.metric(label="Cambio en la temperatura", "70 °F", "1.2 °F")
+        st.metric(label="Cambio en la temperatura", "70 F", "1.2 F")
 
     with col2:
         st.info('Viento',icon="🍃")
