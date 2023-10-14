@@ -46,10 +46,7 @@ def page3():
     st.markdown("# Deltas 🚥")
     st.sidebar.markdown("# Deltas 🚥")
 
-    image = Image.open('cloud-4820504_1280.jpg')
-    st.image(image, caption='Clima')
-
-    
+   
     col1, col2, col3 = st.columns(3,gap='large')
     
     with col1:
@@ -63,6 +60,10 @@ def page3():
     with col3:
         st.info('Humedad',icon="💧")
         st.metric("Cantidad de humedad","86%", "4%")
+
+
+    image = Image.open('cloud-4820504_1280.jpg')
+    st.image(image, caption='Clima')
 
 
 
