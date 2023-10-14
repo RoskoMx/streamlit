@@ -50,11 +50,11 @@ def page3():
 
     with col2:
         st.info('Viento',icon="🍃")
-        st.metric(label="Velocidad viento","9 mph", "-8%")
+        st.metric("Velocidad viento","9 mph", "-8%")
 
     with col3:
         st.info('Humedad',icon="💧")
-        st.metric(label="Cantidad de humedad","86%", "4%")
+        st.metric("Cantidad de humedad","86%", "4%")
 
 
 
