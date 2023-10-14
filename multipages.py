@@ -37,34 +37,24 @@ def page2():
 
 
 
-url2 = 'https://raw.githubusercontent.com/LilianaC/Pandas/master/netflix_titles.csv'
-df2 = pd.read_csv(url2)
-
-paisp = df2['country'].mode()[0]
-durat = df2['duration'].mode()[0]
-year = df2['release_year'].mode()[0]
-tipo = df2['type'].mode()[0]
 
 def page3():
-    st.markdown("# Netflix 🎞️")
-    st.sidebar.markdown("# Netflix 🎞️")
-    total3,total4,total5,total6 = st.columns(4,gap='small')
+    st.markdown("# Deltas 🚥")
+    st.sidebar.markdown("# Deltas 🚥")
     
-    with total3:
-        st.info('País',icon="📌")
-        st.metric(label="País con más producción",value=f"{paisp}")
+    col1, col2, col3 = st.columns(3,gap='large')
+    
+    with col1:
+        st.info('Temperatura',icon="🌡️")
+        st.metric(label="Cambio en la temperatura", "70 °F", "1.2 °F")
 
-    with total4:
-        st.info('Duración',icon="📌")
-        st.metric(label="Duración más repetida",value=f"{durat}")
+    with col2:
+        st.info('Viento',icon="🍃")
+        st.metric(label="Velocidad viento","9 mph", "-8%")
 
-    with total5:
-        st.info('Año',icon="📌")
-        st.metric(label="Año donde se produjo más",value=f"{year}")
-
-    with total6:
-        st.info('Tipo',icon="📌")
-        st.metric(label="Tipo de producción",value=f"{tipo}")
+    with col3:
+        st.info('Humedad',icon="💧")
+        st.metric(label="Cantidad de humedad","86%", "4%")
 
 
 
