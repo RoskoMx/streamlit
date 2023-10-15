@@ -19,6 +19,10 @@ def Home():
     image = Image.open('internet-4463031_1280.jpg')
     st.image(image, caption='Estadísticas')
     
+    image = Image.open('Streamlit8.png')
+    st.image(image, caption='Guía del programa')
+    
+
 
 
 def page2():
