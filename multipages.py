@@ -24,7 +24,6 @@ def Home():
     
 
 
-
 def page2():
     st.markdown("# Datos FIFA ⚽")
     st.sidebar.markdown("# Datos FIFA ⚽")
