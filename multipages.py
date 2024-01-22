@@ -1,21 +1,21 @@
 # Contents of ~/my_app/streamlit_app.py
 import streamlit as st
 import pandas as pd
-from PIL import Image
+from PIL import Image #Para importar imágenes
 
-st.sidebar.image("logoCCTSF2-1.png",caption="Saludos desde México 🇲🇽")
+st.sidebar.image("_6dbaa021-8bf0-4e85-93f1-f6973ca1edad.jpeg",caption="Saludos desde Cannes, Francia 🇫🇷")
 
-
+#Archivo de datos csv que está en este repositorio. Después se hace el Data frame.
 url = 'https://raw.githubusercontent.com/LilianaC/Pandas/master/Fifa%2023%20Fut%20Players.csv'
 df= pd.read_csv(url)
 
-rankings = df['Ratings'].max()
-pais = df['Country'].mode()[0]
+rankings = df['Ratings'].max() #Mandamos a llamar el máximo Ranking
+pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se repite más, con mode(0) (esto toma el primero)
 
-
+#Página de Home
 def Home():
-    st.markdown("# Home 🎈")
-    st.sidebar.markdown("# Home 🎈")
+    st.markdown("# Home Rosko 🎈")
+    st.sidebar.markdown("# Home Jrnkins 🎈")
     image = Image.open('internet-4463031_1280.jpg')
     st.image(image, caption='Estadísticas')
     
@@ -31,9 +31,9 @@ def page2():
     image = Image.open('soccer-488700_1280.jpg')
     st.image(image, caption='Fútbol')
     
-    
-    total1,total2=st.columns(2,gap='large')
-    
+    #Definición de las columnas
+    total1,total2=st.columns(2,gap='large') #Gap es el espacio entre columnas, puede ser omitido
+
     with total1:
         st.info('Ranking más alto',icon="📌")
         st.metric(label="Ranking",value=f"{rankings:,.0f}")
