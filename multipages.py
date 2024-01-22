@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image #Para importar imágenes
 
-st.sidebar.image("_6dbaa021-8bf0-4e85-93f1-f6973ca1edad.jpeg",caption="Saludos desde Cannes, Francia 🇫🇷")
+st.sidebar.image("rosko_hoja.png",caption="Saludos desde Cannes, Francia 🇫🇷")
 
 #Archivo de datos csv que está en este repositorio. Después se hace el Data frame.
 url = 'https://raw.githubusercontent.com/LilianaC/Pandas/master/Fifa%2023%20Fut%20Players.csv'
@@ -15,7 +15,7 @@ pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se 
 #Página de Home
 def Home():
     st.markdown("# Home Rosko 🎈")
-    st.sidebar.markdown("# Home Jrnkins 🎈")
+    st.sidebar.markdown("# Home Jenkins 🎈")
     image = Image.open('internet-4463031_1280.jpg')
     st.image(image, caption='Estadísticas')
     
