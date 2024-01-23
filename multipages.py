@@ -24,10 +24,9 @@ def Home():
     
 def page1():
     st.markdown("# Proyectos de Práctica")
-    st.sidebar.mardown("SoLo lo QuE aparece en la barrita despues de minimizar")
-    
-    image01 = Image.open('rosko.jpg')
-    st.image(image01, caption='Vamos a poner cualqier cosa')
+    st.sidebar.mardown("# 1987")
+    image = Image.open('rosko.jpg')
+    st.image(image, caption='Vamos a poner cualqier cosa')
 
     with st.container():
       st.subheader("Hola bienvenido a mi sitio web dentro de una función :wave:")
