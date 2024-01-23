@@ -35,17 +35,17 @@ def page1():
       st.write("Bienvenido a mi canal. Mi canal de Youtube está destinado a compartir música que aparece en películas y series del mundo.")
       st.write("[Mas informacion >](https://www.youtube.com/channel/UCAd74yI_c0q9b7UA1KLBqMA")
     
-    """with st.container():
-      st.write("---") #Separa la primer sección de la segunda
-      left_column, right_column = st.columns(2)
-      with left_column:
-        st.header("Mi objetivo")
-        st.write(
-          """ 
-            """Como esto es un texto más grande vamos a escribir entre comillas triples
-            con saltos de línea y todo lo va a tomar como un string
-            Veremos si lo centra o lo pone desrodenado.
-          """
+    #with st.container():
+      #st.write("---") #Separa la primer sección de la segunda
+      #left_column, right_column = st.columns(2)
+      #with left_column:
+       # st.header("Mi objetivo")
+        #st.write(
+         # """ 
+          #  """Como esto es un texto más grande vamos a escribir entre comillas triples
+           # con saltos de línea y todo lo va a tomar como un string
+            #Veremos si lo centra o lo pone desrodenado.
+          #"""
         #)
         #st.write("[Youtube >](https://www.youtube.com/watch?v=_vnF1nYcUys)")"""
     
