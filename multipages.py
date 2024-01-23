@@ -3,9 +3,9 @@ import streamlit as st
 import pandas as pd
 from PIL import Image #Para importar imágenes
 
-st.sidebar.image("rosko_hoja.png",caption="Saludos desde Cannes, Francia 🇫🇷")
+st.sidebar.image("rosko_hoja.png",caption ="Saludos desde Cannes, Francia 🇫🇷 ")
 
-#Archivo de datos csv que está en este repositorio. Después se hace el Data frame.
+#Archivo de datos csv que está en este repositorio, se escribe la direción y después se hace el Data frame.
 url = 'https://raw.githubusercontent.com/LilianaC/Pandas/master/Fifa%2023%20Fut%20Players.csv'
 df= pd.read_csv(url)
 
@@ -16,13 +16,14 @@ pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se 
 def Home():
     st.markdown("# Home Rosko 🎈")
     st.sidebar.markdown("# Home Jenkins 🎈")
-    image = Image.open('internet-4463031_1280.jpg')
+    image = Image.open('rosko_xolo.png')
     st.image(image, caption='Estadísticas')
     
     image = Image.open('Streamlit8.png')
     st.image(image, caption='Guía del programa')
     
-
+def page1():
+    st.markdown("Proyectos de Práctica")
 
 def page2():
     st.markdown("# Datos FIFA ⚽")
@@ -70,12 +71,13 @@ def page3():
 
 
 
-
+#Definimos los nombres de las páginas para llamarlas
 page_names_to_funcs = {
     "Home": Home,
+    "Proyectos": page1,
     "Datos FIFA ⚽": page2,
     "Deltas 🚥": page3,
 }
-
+#Aquí trabaja como un diccionario y manda a llamar a la parte de las keys
 selected_page = st.sidebar.selectbox("Selecciona una página", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
+page_names_to_funcs[selected_page]() #Manda a llamar la función seleccionada
