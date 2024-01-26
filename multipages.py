@@ -92,15 +92,15 @@ def page3():
         st.info('Humedad',icon="💧")
         st.metric("Cantidad de humedad","86%", "4%")
 
-
+    
     image = Image.open('cloud-4820504_1280.jpg')
     st.image(image, caption='Clima')
 
 
 def page4():
     #Encabezado
-    st.header('Gráficas utilizando Pandas', divider='rainbow')
-    st.title("Resultados del Grand Prix de Países Bajos")
+    #st.header('Gráficas utilizando Pandas', divider='rainbow')
+    #st.title("Resultados del Grand Prix de Países Bajos")
     
     #Imagen tal cuál está nombrada en el repositorio
     image = Image.open('Verstappen-pole-lap-Zandvoort-Netherlands-2021.jpg')
@@ -148,8 +148,10 @@ page_names_to_funcs = {
     "Proyectos": page1,
     "Datos FIFA ⚽": page2,
     "Deltas 🚥": page3,
-    "Fórmula1": page4,
+    "Formula1": page4,
 }
 #Aquí trabaja como un diccionario y manda a llamar a la parte de las keys
 selected_page = st.sidebar.selectbox("Selecciona una página", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]() #Manda a llamar la función seleccionada
+
+
