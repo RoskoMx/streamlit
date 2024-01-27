@@ -108,14 +108,15 @@ def page4():
     #Descripción de la imagen
     
     #Usuario
-    st.text_input("¿Cuál es tu nombre?", key="name")
-    st.session_state.name
+    st.text_input("¿Cuál es tu nombre? (Este input sale con st.text_input) y se asigna una key", key="name")
+    st.session_state.name #Para mostrar lo que guardamos en key
     
     #Como un print y no es necesario escribir st.text
-    st.text('¡Hola '+st.session_state.name+' !') 
-    'Hola cómo estás? ',st.session_state.name
+    st.text('¡Hola '+st.session_state.name+' ! (Aquí concatenamos con st.text y con st.session_state.key') 
+    'Esta es otra forma de poner lo que pusimos en st.session_state.key, sin st.text, mi querid@ ',st.session_state.name
     
     #Generamos el Dataframe como si estuvieramos en Pandas
+    'Importante generar el raw para el dataframe'
     df = pd.read_csv('https://raw.githubusercontent.com/LilianaC/streamlit3/main/Datos%20F1%20Dutch%20GP%20-%20Sheet1.csv')
     #Estos Dataframes se copian y pegan con la opción de raw, se pega la dirección de arriba del navegador
     #Sí el checkbox es verdadero y solo escribimos df
