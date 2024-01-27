@@ -16,6 +16,7 @@ pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se 
 def Home():
     st.markdown("# Home Rosko 🎈")
     st.sidebar.markdown("# Home Jenkins 🎈")
+    st.header('Gráficas utilizando Pandas', divider='rainbow')
     image = Image.open('rosko_xolo.png')
     st.image(image, caption='Primer página de proyectos 2024')
     
@@ -98,8 +99,8 @@ def page3():
 
 
 def page4():
-    #Encabezado
-    st.header('Gráficas utilizando Pandas', divider='rainbow')
+    #Encabezado, tratar de evitar el header en subpáginas.
+    #st.header('Gráficas utilizando Pandas', divider='rainbow')
     st.title("Resultados del Grand Prix de Países Bajos")
     
     #Imagen tal cuál está nombrada en el repositorio
