@@ -134,7 +134,7 @@ def page4():
     'Tu selección: ', option
     
     #Línea que muestra toda la info del renglón
-    'Mostramos todo lo que haya en un renglón de a cuerdo con: df.loc[df['Columna_Select']==variable]'
+    'Mostramos todo lo que haya en un renglón de a cuerdo con: df.loc[df[´Columna_Select´]==variable]'
     df.loc[df['DRIVER'] == option]
     
     #Gráfica
