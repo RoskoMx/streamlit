@@ -99,7 +99,7 @@ def page3():
 
 def page4():
     #Encabezado
-    #st.header('Gráficas utilizando Pandas', divider='rainbow')
+    st.header('Gráficas utilizando Pandas', divider='rainbow')
     st.title("Resultados del Grand Prix de Países Bajos")
     
     #Imagen tal cuál está nombrada en el repositorio
