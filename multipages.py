@@ -100,7 +100,7 @@ def page3():
 def page4():
     #Encabezado
     #st.header('Gráficas utilizando Pandas', divider='rainbow')
-    #st.title("Resultados del Grand Prix de Países Bajos")
+    st.title("Resultados del Grand Prix de Países Bajos")
     
     #Imagen tal cuál está nombrada en el repositorio
     image = Image.open('Verstappen-pole-lap-Zandvoort-Netherlands-2021.jpg')
