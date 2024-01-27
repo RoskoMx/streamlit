@@ -138,7 +138,7 @@ def page4():
     df.loc[df['DRIVER'] == option]
     
     #Gráfica
-    'La gráfica aparece, de manera sencilla, con st.line_chart(df, x='AVG_Speed', y='LAP' )'
+    'La gráfica aparece, de manera sencilla, con st.line_chart(df, x=´AVG_Speed´, y=´LAP´ )'
     st.line_chart(
         df,
         x = 'AVG SPEED',
