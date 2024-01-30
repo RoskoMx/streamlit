@@ -5,7 +5,7 @@ from PIL import Image #Para importar imágenes
 import plotly.express as px #Ultimas dos librerías para la app de FIFA
 import plotly.graph_objs as go
 
-st.sidebar.image("rosko_hoja.png",caption ="Saludos desde Cannes, Francia 🇫🇷 ")
+st.sidebar.image("images/rosko_hoja.png",caption ="Saludos desde Cannes, Francia 🇫🇷 ")
 
 #Archivo de datos csv que está en este repositorio, se escribe la direción y después se hace el Data frame.
 #Estos dos párrafos son exclusivos de las página de FIFA
