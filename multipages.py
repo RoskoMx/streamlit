@@ -18,6 +18,14 @@ df= pd.read_csv(url)
 rankings = df['Ratings'].max() #Mandamos a llamar el máximo Ranking
 pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se repite más, con mode(0) (esto toma el primero)
 
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code !=200:
+        return None
+    return r.json()
+
+    
 #Página de Home
 def Home():
     st.markdown("# Home Rosko 🦃")
