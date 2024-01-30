@@ -2,7 +2,7 @@
 #Para lotties
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 import pandas as pd
 from PIL import Image #Para importar imágenes
@@ -20,11 +20,11 @@ rankings = df['Ratings'].max() #Mandamos a llamar el máximo Ranking
 pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se repite más, con mode(0) (esto toma el primero)
 
 
-def load_lottieurl(url):
+"""def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code !=200:
         return None
-    return r.json()
+    return r.json()"""
 
 
 #Página de Home
@@ -36,7 +36,7 @@ def Home():
     
     #Esta parte del código hace refrencia al repositorio lottie de web_company de Tony
     #Se agregan al archivo requirements el 'streamlottie' y 'requirements'
-    lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
+    #lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
 
     with st.container():
         st.write("---")
@@ -60,8 +60,8 @@ def Home():
             st.write("[Más sobre nosotros>](https://debutants-sur-internet.streamlit.app/")
 
         with right_column:
-            st_lottie(load_lottieurl(lottie_file), height=400)
-
+            #st_lottie(load_lottieurl(lottie_file), height=400)
+            st.image(Image.open('images/logoCCTSF2-1.png'))
 
     
 def page1():
