@@ -5,6 +5,10 @@ from PIL import Image #Para importar imágenes
 import plotly.express as px #Ultimas dos librerías para la app de FIFA
 import plotly.graph_objs as go
 
+#Para lotties
+import requests
+from streamlit_lottie import st_lottie  
+
 st.sidebar.image("images/rosko_hoja.png",caption ="Saludos desde Cannes, Francia 🇫🇷 ")
 
 #Archivo de datos csv que está en este repositorio, se escribe la direción y después se hace el Data frame.
@@ -25,7 +29,7 @@ def Home():
     #Esta parte del código hace refrencia al repositorio lottie de web_company de Tony
     #Se agregan al archivo requirements el 'streamlottie' y 'requirements'
     lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
-    
+
     with st.container():
         st.write("---")
         left_column, right_column= st.columns((2))
@@ -46,6 +50,7 @@ def Home():
                 """
             )
             st.write("[Más sobre nosotros>](https://debutants-sur-internet.streamlit.app/")
+
         with right_column:
             st_lottie(load_lottieurl(lottie_file), height=400)
 
