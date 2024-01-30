@@ -1,8 +1,9 @@
 # Contents of ~/my_app/streamlit_app.py
 #Para lotties
+import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
-import streamlit as st
+
 import pandas as pd
 from PIL import Image #Para importar imágenes
 import plotly.express as px #Ultimas dos librerías para la app de FIFA
@@ -25,7 +26,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-    
+
 #Página de Home
 def Home():
     st.markdown("# Home Rosko 🦃")
