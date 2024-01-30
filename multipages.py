@@ -28,7 +28,7 @@ def Home():
 def page1():
     st.markdown("# Proyectos de Práctica")
     st.sidebar.markdown("# 1987")
-    image01 = Image.open('/images/rosko.jpg')
+    image01 = Image.open('images/rosko.jpg')
     st.image(image01, caption='Vamos a poner cualqier cosa')
 
     with st.container():
