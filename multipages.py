@@ -20,7 +20,7 @@ def Home():
     st.markdown("# Home Rosko 🦃")
     st.sidebar.markdown("# Estás en la casa 🎈")
     image = Image.open('images/rosko_xolo.png')
-    st.image(image, caption='Primer página de proyectos 2024')
+    st.image(image, caption='Logo de Xolo creado con IA')
     
     image = Image.open('images/Streamlit8.png')
     st.image(image, caption='Guía del programa')
@@ -200,11 +200,11 @@ def page4():
 
 #Definimos los nombres de las páginas para llamarlas
 page_names_to_funcs = {
-    "Home": Home,
-    "Proyectos": page1,
+    "Home 🥇": Home,
+    "Proyectos 🎎": page1,
     "Datos FIFA ⚽": page2,
     "Deltas 🚥": page3,
-    "Formula1": page4,
+    "Formula1 🏎": page4,
 }
 #Aquí trabaja como un diccionario y manda a llamar a la parte de las keys
 selected_page = st.sidebar.selectbox("Selecciona una página", page_names_to_funcs.keys())
