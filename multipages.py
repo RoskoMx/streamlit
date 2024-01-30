@@ -1,13 +1,12 @@
 # Contents of ~/my_app/streamlit_app.py
+#Para lotties
+import requests
+from streamlit_lottie import st_lottie
 import streamlit as st
 import pandas as pd
 from PIL import Image #Para importar imágenes
 import plotly.express as px #Ultimas dos librerías para la app de FIFA
 import plotly.graph_objs as go
-
-#Para lotties
-import requests
-from streamlit_lottie import st_lottie  
 
 st.sidebar.image("images/rosko_hoja.png",caption ="Saludos desde Cannes, Francia 🇫🇷 ")
 
