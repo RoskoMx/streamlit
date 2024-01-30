@@ -19,10 +19,10 @@ pais = df['Country'].mode()[0] #Método de Pandas, queremos saber qué país se 
 def Home():
     st.markdown("# Home Rosko 🦃")
     st.sidebar.markdown("# Estás en la casa 🎈")
-    image = Image.open('/images/rosko_xolo.png')
+    image = Image.open('images/rosko_xolo.png')
     st.image(image, caption='Primer página de proyectos 2024')
     
-    image = Image.open('/images/Streamlit8.png')
+    image = Image.open('images/Streamlit8.png')
     st.image(image, caption='Guía del programa')
     
 def page1():
@@ -59,7 +59,7 @@ def page2():
     st.markdown("# Datos FIFA ⚽")
     st.sidebar.markdown("# Datos FIFA ⚽")
 
-    image = Image.open('/images/soccer-488700_1280.jpg')
+    image = Image.open('images/soccer-488700_1280.jpg')
     st.image(image, caption='Fútbol')
     
     #Definición de las columnas
@@ -144,7 +144,7 @@ def page3():
         st.metric("Cantidad de humedad","86%", "4%")
 
     
-    image = Image.open('/images/cloud-4820504_1280.jpg')
+    image = Image.open('images/cloud-4820504_1280.jpg')
     st.image(image, caption='Clima')
 
 
@@ -154,7 +154,7 @@ def page4():
     st.title("Resultados del Grand Prix de Países Bajos (con st.title)")
     
     #Imagen tal cuál está nombrada en el repositorio
-    image = Image.open('/images/Verstappen-pole-lap-Zandvoort-Netherlands-2021.jpg')
+    image = Image.open('images/Verstappen-pole-lap-Zandvoort-Netherlands-2021.jpg')
     st.image(image, caption='La imagen de arriba sale igualando una variable a Image.open(ruta de acceso)')
     #Descripción de la imagen
     
