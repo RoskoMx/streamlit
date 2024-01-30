@@ -24,7 +24,7 @@ def Home():
     
     #Esta parte del código hace refrencia al repositorio lottie de web_company de Tony
     #Se agregan al archivo requirements el 'streamlottie' y 'requirements'
-    lottie_file ="Animation-1706015468852.json"
+    lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
     with st.container():
         st.write("---")
         left_column, right_column= st.columns((2))
@@ -44,9 +44,9 @@ def Home():
                 ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
                 """
             )
-            st.write("[Más sobre nosotros>](https://valerapp.com/about/)")
+            st.write("[Más sobre nosotros>](https://debutants-sur-internet.streamlit.app/")
         with right_column:
-            st_lottie((lottie_file), height=400)
+            st_lottie(load_lottieurl(lottie_file), height=400)
 
 
     
