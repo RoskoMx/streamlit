@@ -22,8 +22,33 @@ def Home():
     image = Image.open('images/rosko_xolo.png')
     st.image(image, caption='Logo de Xolo creado con IA')
     
-    image = Image.open('images/Streamlit8.png')
-    st.image(image, caption='Guía del programa')
+    #Esta parte del código hace refrencia al repositorio lottie de web_company de Tony
+    #Se agregan al archivo requirements el 'streamlottie' y 'requirements'
+    lottie_file ="Animation-1706015468852.json"
+    with st.container():
+        st.write("---")
+        left_column, right_column= st.columns((2))
+        with left_column:
+            st.header("Sobre nosotros")
+            st.write(
+                """
+                Nuestro objetivo es poder aportar valor a los negocios ayudandoles a ahorrar tiempo y dinero a través de la implantación de nuevas tecnologías como la inteligencia artifical, analisis de datos o implantación de software de automatización.
+                Seguramente te vamos a poder ayudar si:
+
+                - Tienes un negocio y quieres mejorar tus procesos de trabajo para ahorrar tiempo y dinero
+                - Tienes trabajadores que emplean parte de su jornada a realizar tareas repetitivas sin valor añadido para tu negocio
+                - No tienes claras las métricas de tu negocio y quieres tomar decisiones basadas en datos
+                - Quieres mejorar la experiencia de tus clientes
+                - Usas herramientas de software antiguas o poco eficientes o procesos en los que usas papel y bolígrafo
+
+                ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
+                """
+            )
+            st.write("[Más sobre nosotros>](https://valerapp.com/about/)")
+        with right_column:
+            st_lottie(load_lottieurl(lottie_file), height=400)
+
+
     
 def page1():
     st.markdown("# Proyectos de Práctica")
