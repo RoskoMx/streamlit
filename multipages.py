@@ -25,6 +25,7 @@ def Home():
     #Esta parte del código hace refrencia al repositorio lottie de web_company de Tony
     #Se agregan al archivo requirements el 'streamlottie' y 'requirements'
     lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
+    
     with st.container():
         st.write("---")
         left_column, right_column= st.columns((2))
