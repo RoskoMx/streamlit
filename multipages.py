@@ -1,7 +1,7 @@
 # Contents of ~/my_app/streamlit_app.py
 
-import streamlit as st
 import requests
+import streamlit as st
 from streamlit_lottie import st_lottie
 
 import pandas as pd
