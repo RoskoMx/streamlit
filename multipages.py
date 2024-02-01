@@ -65,7 +65,7 @@ def Home():
     
 def page1():
     st.markdown("# Animación")
-    st.sidebar.markdown("# html /Js aquí")
+    st.sidebar.markdown("# HTML y Js aquí")
     #image01 = Image.open('images/rosko.jpg')
     #st.image(image01, caption='Vamos a poner cualqier cosa')
 
@@ -75,18 +75,19 @@ def page1():
       st.write("---") #Separa la primer sección de la segunda
       left_column, right_column = st.columns(2)
       with left_column:
-        st.header("Mi objetivo")
+        st.header("Increíble, ¿no?")
         st.write(
           """
-            Como esto es un texto más grande vamos a escribir entre comillas triples
-            con saltos de línea y todo lo va a tomar como un string
-            Veremos si lo centra o lo pone desrodenado.
+            En esta parte del sitio te muestro cómo es posible incluir código HTML y JS
+            para poder incluir imágenes animadas o archivos Json. Existe otra manera, al parecer, más
+            sencilla que otros canales de Youtube abordan pero por alguna extraña razón
+            la manera de utilizar lotties no le es posible a un servidor.
           """
         )
-        st.write("[Youtube >](https://www.youtube.com/watch?v=_vnF1nYcUys)")
+        st.write("Otro video musical [Youtube >](https://www.youtube.com/watch?v=_vnF1nYcUys)")
       
       with right_column:
-          st.write("DesBiiiienvenido a mi canal. Mi canal de Youtube está destinado a compartir música que aparece en películas y series del mundo.")
+          st.write("Esta parte incluye el mismo video mostrado en la columna de la izquierda pero ahora mostrado directamente en la página:.")
       
 
 def page2():
@@ -235,7 +236,7 @@ def page4():
 #Definimos los nombres de las páginas para llamarlas
 page_names_to_funcs = {
     "Home 🥇": Home,
-    "Proyectos 🎎": page1,
+    "Otros lenguajes 🎎": page1,
     "Datos FIFA ⚽": page2,
     "Deltas 🚥": page3,
     "Formula1 🏎": page4,
