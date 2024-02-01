@@ -32,6 +32,12 @@ def Home():
     #lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
 
     with st.container():
+      st.subheader("Hola bienvenido a mi sitio web de proyectos :wave:")
+      #st.title("Información random de contacto")
+      st.write("El apartado HOME está destinado a probar las distribuciones de una página web en Stramlit. Además incluye una forma interesante de poner un enlace en la palabra o frase que mejor describa el lugar.")
+      st.write("[Aquí un video musical puesto como enlace.](https://www.youtube.com/channel/UCAd74yI_c0q9b7UA1KLBqMA)")
+    
+    with st.container():
         st.write("---")
         left_column, right_column= st.columns((2))
         with left_column:
@@ -58,17 +64,13 @@ def Home():
 
     
 def page1():
-    st.markdown("# Proyectos de Práctica")
-    st.sidebar.markdown("# 1987")
-    image01 = Image.open('images/rosko.jpg')
-    st.image(image01, caption='Vamos a poner cualqier cosa')
+    st.markdown("# Animación")
+    st.sidebar.markdown("# html /Js aquí")
+    #image01 = Image.open('images/rosko.jpg')
+    #st.image(image01, caption='Vamos a poner cualqier cosa')
 
     with st.container():
-      st.subheader("Hola bienvenido a mi sitio web dentro de una función :wave:")
-      st.title("Información random de contacto")
-      st.write("Bienvenido a mi canal. Mi canal de Youtube está destinado a compartir música que aparece en películas y series del mundo.")
-      st.write("[Mas informacion >](https://www.youtube.com/channel/UCAd74yI_c0q9b7UA1KLBqMA")
-
+      
     with st.container():
       st.write("---") #Separa la primer sección de la segunda
       left_column, right_column = st.columns(2)
