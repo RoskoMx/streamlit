@@ -50,11 +50,11 @@ def Home():
                 ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
                 """
             )
-            st.write("[Más sobre nosotros>](https://debutants-sur-internet.streamlit.app/")
+            st.write("[Más sobre nosotros>](https://debutants-sur-internet.streamlit.app/"))
 
         with right_column:
             #st_lottie(load_lottieurl(lottie_file), height=400)
-            st.image(Image.open('images/logoCCTSF2-1.png'))
+            st.image(Image.open('images/_289490e8-96c2-420d-a924-a976d48429f0.jpeg'))
 
     
 def page1():
