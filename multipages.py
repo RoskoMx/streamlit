@@ -50,7 +50,7 @@ def Home():
                 ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
                 """
             )
-            st.write("[Más sobre nosotros>]https://debutants-sur-internet.streamlit.app/")
+            st.write(f"[{Más sobre nosotros}] ({https://debutants-sur-internet.streamlit.app})")
 
         with right_column:
             #st_lottie(load_lottieurl(lottie_file), height=400)
