@@ -66,10 +66,23 @@ def page1():
     st.markdown("# Animación")
     st.sidebar.markdown("# HTML y Js aquí")
 
+    # Código JavaScript para cargar una animación Lottie
+    js_code = """
+    // Llama a la biblioteca LottieWeb
+    import lottie from 'https://cdn.jsdelivr.net/npm/lottie-web/build/player/lottie_light.min.js';
     
-   # Leer el contenido del archivo JavaScript
-    with open("mi_animacion.js", "r") as js_file:
-        js_code = js_file.read()
+    // Configuración de la animación
+    var animacionConfig = {
+        container: document.getElementById('animation-container'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'Animation-1706015468852.json' // Reemplaza con la ruta correcta a tu archivo JSON de animación Lottie
+    };
+    
+    // Cargar la animación
+    var animacion = lottie.loadAnimation(animacionConfig);
+    """
     
     # Código HTML para incluir el JavaScript
     html_code = f"""
@@ -78,22 +91,21 @@ def page1():
     </div>
     
     <script>
-        {js_code}
+    {js_code}
     </script>
     
     <style>
-        #animation-container {{
-            padding: 20px;
-            color: white;
-            font-size: 24px;
-            text-align: center;
-        }}
+    #animation-container {{
+        padding: 20px;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }}
     </style>
     """
     
     # Mostrar el código HTML en Streamlit
     st.markdown(html_code, unsafe_allow_html=True)
-
     
     #image01 = Image.open('images/rosko.jpg')
     #st.image(image01, caption='Vamos a poner cualqier cosa')
