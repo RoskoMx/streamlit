@@ -9,7 +9,7 @@ var animacionConfig = {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'ruta_del_archivo/animacion.json' // Reemplaza con la ruta correcta a tu archivo JSON de animación Lottie
+    path: '/Animation-1706015468852.json' // Reemplaza con la ruta correcta a tu archivo JSON de animación Lottie
 };
 
 // Cargar la animación
