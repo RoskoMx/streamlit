@@ -35,8 +35,7 @@ def Home():
       st.subheader("Hola bienvenido a mi sitio web de proyectos :wave:")
       #st.title("Información random de contacto")
       st.write("El apartado HOME está destinado a probar las distribuciones de una página web en Stramlit. Además incluye una forma interesante de poner un enlace en la palabra o frase que mejor describa el lugar.")
-      st.write("[Aquí un video musical puesto como enlace.](https://www.youtube.com/channel/UCAd74yI_c0q9b7UA1KLBqMA)")
-    
+          
     with st.container():
         st.write("---")
         left_column, right_column= st.columns((2))
@@ -53,10 +52,10 @@ def Home():
                 - Quieres mejorar la experiencia de tus clientes
                 - Usas herramientas de software antiguas o poco eficientes o procesos en los que usas papel y bolígrafo
 
-                ***Si esto suena interesante para ti puedes contactarnos a través del formulario que encontrarás al final de la página*** 
+                ***Si lo prefieres, también puedes visitar un sitio web mucho más sencillo donde te mostramos cómo poder hacer uso del mismo.*** 
                 """
             )
-            st.write("[Más sobre nosotros >](https://debutants-sur-internet.streamlit.app)")
+            st.write("[Este es el enlace](https://debutants-sur-internet.streamlit.app)")
 
         with right_column:
             #st_lottie(load_lottieurl(lottie_file), height=400)
@@ -66,6 +65,42 @@ def Home():
 def page1():
     st.markdown("# Animación")
     st.sidebar.markdown("# HTML y Js aquí")
+
+    
+    # Código HTML y JavaScript para la animación
+    html_code = """
+    <div id="animation-container">
+        <h1>Animación Personalizada</h1>
+    </div>
+    
+    <script>
+        // Función para cambiar el color de fondo de forma animada
+        function cambiarColor() {
+            var elemento = document.getElementById("animation-container");
+            elemento.style.backgroundColor = "red"; // Cambiar a cualquier color deseado
+            setTimeout(function() {
+                elemento.style.backgroundColor = "blue"; // Cambiar a otro color deseado
+            }, 1000); // Cambia cada segundo
+        }
+    
+        // Llamar a la función al cargar la página
+        cambiarColor();
+    </script>
+    
+    <style>
+        #animation-container {
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+    """
+    
+    # Mostrar el código HTML en Streamlit
+    st.markdown(html_code, unsafe_allow_html=True)
+
+    
     #image01 = Image.open('images/rosko.jpg')
     #st.image(image01, caption='Vamos a poner cualqier cosa')
 
