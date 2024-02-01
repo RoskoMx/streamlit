@@ -69,7 +69,7 @@ def page1():
     #image01 = Image.open('images/rosko.jpg')
     #st.image(image01, caption='Vamos a poner cualqier cosa')
 
-    with st.container():
+    #with st.container():
       
     with st.container():
       st.write("---") #Separa la primer sección de la segunda
