@@ -67,33 +67,27 @@ def page1():
     st.sidebar.markdown("# HTML y Js aquí")
 
     
-    # Código HTML y JavaScript para la animación
-    html_code = """
+   # Leer el contenido del archivo JavaScript
+    with open("mi_animacion.js", "r") as js_file:
+        js_code = js_file.read()
+    
+    # Código HTML para incluir el JavaScript
+    html_code = f"""
     <div id="animation-container">
         <h1>Animación Personalizada</h1>
     </div>
     
     <script>
-        // Función para cambiar el color de fondo de forma animada
-        function cambiarColor() {
-            var elemento = document.getElementById("animation-container");
-            elemento.style.backgroundColor = "red"; // Cambiar a cualquier color deseado
-            setTimeout(function() {
-                elemento.style.backgroundColor = "blue"; // Cambiar a otro color deseado
-            }, 1000); // Cambia cada segundo
-        }
-    
-        // Llamar a la función al cargar la página
-        cambiarColor();
+        {js_code}
     </script>
     
     <style>
-        #animation-container {
+        #animation-container {{
             padding: 20px;
             color: white;
             font-size: 24px;
             text-align: center;
-        }
+        }}
     </style>
     """
     
