@@ -85,7 +85,7 @@ def page1():
             // Configuración de la animación Lottie desde una URL
             var animationConfig = {
                 container: document.getElementById('animation-container'),
-                renderer: 'svg',
+                renderer: 'canvas',
                 loop: true,
                 autoplay: true,
                 path: 'https://assets3.lottiefiles.com/packages/lf20_C9wLez.json' // URL de una animación relacionada con México
