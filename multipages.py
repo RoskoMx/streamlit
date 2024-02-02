@@ -73,10 +73,7 @@ def page1():
     # Mostrar el contenido HTML en Streamlit
     st.write(animacion_html, unsafe_allow_html=True)
         
-    #image01 = Image.open('images/rosko.jpg')
-    #st.image(image01, caption='Vamos a poner cualqier cosa')
-
-    #with st.container():
+    
       
     with st.container():
       st.write("---") #Separa la primer sección de la segunda
