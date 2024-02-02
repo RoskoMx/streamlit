@@ -66,13 +66,40 @@ def page1():
     st.markdown("# Animación")
     st.sidebar.markdown("# HTML y Js aquí")
 
-    # Leer el contenido del archivo HTML
-    with open("animacion.html", "r") as html_file:
-        animacion_html = html_file.read()
+    # Código HTML con la animación Lottie
+    animacion_html = """
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animación Lottie</title>
+        <!-- Incluye la biblioteca Lottie desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.js"></script>
+    </head>
+    <body>
+        <!-- Contenedor para la animación Lottie -->
+        <div id="animation-container" style="width: 300px; height: 300px;"></div>
+    
+        <script>
+            // Configuración de la animación Lottie desde una URL
+            var animationConfig = {
+                container: document.getElementById('animation-container'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'https://assets3.lottiefiles.com/packages/lf20_C9wLez.json' // URL de una animación relacionada con México
+            };
+    
+            // Cargar la animación Lottie
+            var animacion = lottie.loadAnimation(animationConfig);
+        </script>
+    </body>
+    </html>
+    """
     
     # Mostrar el contenido HTML en Streamlit
-    st.write(animacion_html, unsafe_allow_html=True)
-        
+    st.components.v1.html(animacion_html, height=400, scrolling=False)
     
       
     with st.container():
