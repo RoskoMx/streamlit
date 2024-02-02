@@ -67,7 +67,7 @@ def page1():
     st.sidebar.markdown("# HTML y Js aquí")
 
     # Leer el contenido del archivo HTML
-    with open("ruta_del_archivo/animacion.html", "r") as html_file:
+    with open("animacion.html", "r") as html_file:
         animacion_html = html_file.read()
     
     # Mostrar el contenido HTML en Streamlit
