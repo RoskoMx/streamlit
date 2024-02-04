@@ -214,6 +214,11 @@ def page3():
     st.image(image, caption='Clima')
 
 
+    st.write('Hola, *saludos desde México* 🇲🇽 :sunglasses:')
+    x = st.slider('Selecciona un valor en la barra deslizadora', min_value=1, max_value=10, step=1)
+    st.write(x, 'su cuadrado es: ', x * x)
+
+
 def page4():
     #Encabezado, tratar de evitar el header en subpáginas.
     #st.header('Gráficas utilizando Pandas', divider='rainbow')
