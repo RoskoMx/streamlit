@@ -27,14 +27,10 @@ def Home():
     image = Image.open('images/rosko_xolo.png')
     st.image(image, caption='Logo de Xolo creado con IA')
     
-    #Esta parte del código hace refrencia al repositorio lottie de web_company de Tony
-    #Se agregan al archivo requirements el 'streamlottie' y 'requirements'
-    #lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
-
     with st.container():
       st.subheader("Hola bienvenido a mi sitio web de proyectos :wave:")
       #st.title("Información random de contacto")
-      st.write("El apartado HOME está destinado a probar las distribuciones de una página web en Stramlit. Además incluye una forma interesante de poner un enlace en la palabra o frase que mejor describa el lugar.")
+      st.write("El apartado HOME está destinado a probar las distribuciones de una página web en Streamlit. Además incluye una forma interesante de poner un enlace en la palabra o frase que mejor describa el lugar.")
           
     with st.container():
         st.write("---")
@@ -58,7 +54,6 @@ def Home():
             st.write("[Este es el enlace](https://debutants-sur-internet.streamlit.app)")
 
         with right_column:
-            #st_lottie(load_lottieurl(lottie_file), height=400)
             st.image(Image.open('images/_289490e8-96c2-420d-a924-a976d48429f0.jpeg'))
 
     
@@ -103,23 +98,23 @@ def page1():
     
       
     with st.container():
-      st.write("---") #Separa la primer sección de la segunda
+      st.write("---") 
       left_column, right_column = st.columns(2)
       with left_column:
         st.header("Increíble, ¿no?")
         st.write(
           """
-            En esta parte del sitio te muestro cómo es posible incluir código HTML y JS
+            En esta parte del sitio te mostramos cómo es posible incluir código HTML y JS
             para poder incluir imágenes animadas o archivos Json. Existe otra manera, al parecer, más
             sencilla que otros canales de Youtube abordan pero por alguna extraña razón
-            la manera de utilizar lotties no le es posible a un servidor.
+            la manera de utilizar lotties no nos es posible en este intento.
           """
         )
-        st.write("Otro video musical [Youtube >](https://www.youtube.com/watch?v=_vnF1nYcUys)")
+        st.write("Manera de incluir un enlace para un video musical en [Youtube >](https://www.youtube.com/watch?v=_vnF1nYcUys)")
       
       with right_column:
           st.write("Esta parte incluye el mismo video mostrado en la columna de la izquierda pero ahora mostrado directamente en la página:.")
-      
+          st.video("https://www.youtube.com/watch?v=_vnF1nYcUys", format="video/mp4", start_time=0)
 
 def page2():
     st.markdown("# Datos FIFA ⚽")
@@ -215,7 +210,7 @@ def page3():
 
 
     st.write('Hola, *saludos desde México* 🇲🇽 :sunglasses:')
-    x = st.slider('Selecciona un valor en la barra deslizadora', min_value=1, max_value=10, step=1)
+    x = st.slider('Selecciona un valor en la barra deslizadora', min_value=1, max_value=100, step=2)
     st.write(x, 'su cuadrado es: ', x * x)
 
 
